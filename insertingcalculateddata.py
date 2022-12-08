@@ -14,3 +14,11 @@ db = sqlite3.connect("gameheaders.db")
 db.execute('insert into gameExtraData ("tell","avgrating") select tell,round((WhiteElo+BlackElo)/400)*200 from games;')
 db.commit()
 db.close()
+
+# CREATE TABLE "gameExtraData" (
+# 	"extradataid"	INTEGER,
+# 	"tell"	INTEGER,
+# 	"avgrating"	INTEGER,
+# 	PRIMARY KEY("extradataid" AUTOINCREMENT),
+# 	FOREIGN KEY("tell") REFERENCES "games"("tell")
+# );

@@ -16,14 +16,13 @@ pgns = open("lichess_db_standard_rated_2015-06.pgn",'r')
 db.commit()
 
 reader = chess.polyglot.open_reader("baron30.bin")
-
+tell=str(pgns.tell())
 game = chess.pgn.read_game(pgns)
 j=1
 while game != None:
   
   board = game.board()
   moves = ["''","''","''","''"]
-  tell=str(pgns.tell())
   nummoves=str(game.end().ply())
   offbookply = 0
 
@@ -57,6 +56,7 @@ while game != None:
   if j%1000==0:
     print(j)
   j+=1
+  tell=str(pgns.tell())
   game=chess.pgn.read_game(pgns)
 db.commit()
 

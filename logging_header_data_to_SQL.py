@@ -13,14 +13,14 @@ pgns = open("lichess_db_standard_rated_2015-06.pgn",'r')
 # db.execute("CREATE TABLE games (gameid INTEGER PRIMARY KEY, tell INTEGER, Site char(50), White char(30), Black char(30), WhiteElo int, BlackElo int, Result char(10), ECO char(10), Opening char(50), Termination char(30), TimeControl char(30), UTCDate char(10), UTCTime char(8), Event char(100), WhiteRatingDiff char(10), BlackRatingDiff char(10), BlackTitle char(10), WhiteTitle char(10), Date char(50), Round char(10))")
 
 db.commit()
-
+tell = pgns.tell()
 gameheaders = chess.pgn.read_headers(pgns)
 j=1
 while gameheaders != None:
   headers = list(gameheaders._tag_roster.keys())+list(gameheaders._others.keys())
   headersString=','.join(headers)
 
-  valuesString = '"'+str(pgns.tell())+'"'
+  valuesString = '"'+str(tell)+'"'
   for i in range(0,len(headers)):
     valuesString+=',"'+gameheaders[headers[i]]+'"'
 
@@ -38,6 +38,7 @@ while gameheaders != None:
     db.commit()
     print(j)
   j+=1
+  tell = pgns.tell()
   gameheaders=chess.pgn.read_headers(pgns)
 
 db.commit()

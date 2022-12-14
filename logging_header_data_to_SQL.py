@@ -5,7 +5,7 @@ import chess.engine
 import chess.polyglot
 import stockfish
 
-db = sqlite3.connect("gameheaders2.db")
+db = sqlite3.connect("gameheaders.db")
 pgns = open("lichess_db_standard_rated_2015-06.pgn",'r')
 
 ##creating tables

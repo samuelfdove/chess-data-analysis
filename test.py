@@ -12,19 +12,9 @@ import seaborn as sns
 import csv
 
 
-db = sqlite3.connect("gameheaders.db")
-newtell = -1
-for i in reversed(range(2324107)):
-  if i==0:
-    break
-  if i==1:
-    newtell = 0
-  else:
-    db.execute("update games set tell=(select tell from games where gameid="+str(i-1)+") where tell="+str(i))
 
-  print(i)
+import logging_first_4_movedata
+print('done first 4 moves')
 
-
-db.commit()
-
-
+import logging_all_initial_move_data
+print('done finding other initial moves')

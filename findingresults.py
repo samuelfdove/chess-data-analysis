@@ -33,13 +33,13 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select fromsquarerank,fromsquarefile,piece,COUNT(*),turn from allmoves where isbook=0 group by fromsquarerank,fromsquarefile,piece,turn",db)
 # df.to_csv('results/piece_from_square_counts_by_side.csv',index=False)
 
-#PIECE TO SQUARE COUNTS BY SIDE
-df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn from allmoves where isbook=0 group by tosquarerank,tosquarefile,piece,turn",db)
-df.to_csv('results/piece_to_square_counts_by_side.csv',index=False)
+# #PIECE TO SQUARE COUNTS BY SIDE
+# df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn from allmoves where isbook=0 group by tosquarerank,tosquarefile,piece,turn",db)
+# df.to_csv('results/piece_to_square_counts_by_side.csv',index=False)
 
-#PIECE TO SQUARE COUNTS BY SIDE BY ELO
-df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating",db)
-df.to_csv('results/piece_to_square_counts_by_side_by_rating.csv',index=False)
+# #PIECE TO SQUARE COUNTS BY SIDE BY ELO
+# df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating",db)
+# df.to_csv('results/piece_to_square_counts_by_side_by_rating.csv',index=False)
 
 # #PIECE DISTANCE BY ELO --Didn't give much
 # df = pd.read_sql_query("SELECT piece, avgrating, avg(distance) from allmoves join gameExtraData using (tell) group by piece, avgrating", db)
@@ -79,5 +79,23 @@ df.to_csv('results/piece_to_square_counts_by_side_by_rating.csv',index=False)
 # df.to_csv('results/piece_after_check_by_rating.csv',index=False)
 
 # df = pd.read_sql_query("select avgrating,COUNT(*) from allmoves join gameExtraData using (tell) group by avgrating", db)
-# df.to_csv('results/rating_move_amounts.csv')
+# df.to_csv('results/rating_move_amounts.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,piece,COUNT(*) as 'nummoves' from allmoves join gameExtraData using (tell) group by piece,avgrating", db)
+# df.to_csv('results/piece_move_amounts_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,Termination,COUNT(*) as 'numgames' from games join gameExtraData using (tell) group by Termination,avgrating", db)
+# df.to_csv('results/termination_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,E.Opening,COUNT(*) as 'numgames' from games join gameExtraData using (tell) join ECOtoOpening E using (ECO) group by E.Opening,avgrating", db)
+# df.to_csv('results/opening_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,move1,move2,move3,move4,COUNT(*) as 'numgames' from firstmoves join gameExtraData using (tell) group by avgrating,move1,move2,move3,move4", db)
+# df.to_csv('results/firstmoves_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,nummoves,COUNT(*) as 'numgames' from firstmoves join gameExtraData using (tell) group by avgrating,nummoves", db)
+# df.to_csv('results/nummoves_by_rating.csv',index=False)
+
+
+db.close()
 

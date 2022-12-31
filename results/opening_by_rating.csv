@@ -1,0 +1,440 @@
+avgrating,Opening,numgames
+800,Alekhine's defence,76
+1000,Alekhine's defence,878
+1200,Alekhine's defence,2923
+1400,Alekhine's defence,6422
+1600,Alekhine's defence,8402
+1800,Alekhine's defence,5267
+2000,Alekhine's defence,1836
+2200,Alekhine's defence,556
+2400,Alekhine's defence,10
+2600,Alekhine's defence,2
+1000,Benko gambit,4
+1200,Benko gambit,133
+1400,Benko gambit,747
+1600,Benko gambit,1424
+1800,Benko gambit,1179
+2000,Benko gambit,396
+2200,Benko gambit,140
+2400,Benko gambit,20
+2600,Benko gambit,1
+1000,Benoni defence,13
+1200,Benoni defence,288
+1400,Benoni defence,1298
+1600,Benoni defence,2036
+1800,Benoni defence,1853
+2000,Benoni defence,879
+2200,Benoni defence,207
+2400,Benoni defence,20
+2600,Benoni defence,3
+800,Bird's opening,16
+1000,Bird's opening,421
+1200,Bird's opening,2608
+1400,Bird's opening,6889
+1600,Bird's opening,10168
+1800,Bird's opening,4515
+2000,Bird's opening,869
+2200,Bird's opening,105
+2400,Bird's opening,2
+800,Bishop's opening,74
+1000,Bishop's opening,1400
+1200,Bishop's opening,7146
+1400,Bishop's opening,12356
+1600,Bishop's opening,7423
+1800,Bishop's opening,1311
+2000,Bishop's opening,157
+2200,Bishop's opening,11
+2400,Bishop's opening,2
+1000,Bogo-Indian defence,2
+1200,Bogo-Indian defence,41
+1400,Bogo-Indian defence,166
+1600,Bogo-Indian defence,310
+1800,Bogo-Indian defence,330
+2000,Bogo-Indian defence,166
+2200,Bogo-Indian defence,43
+2400,Bogo-Indian defence,5
+2600,Bogo-Indian defence,2
+1000,Budapest defence,18
+1200,Budapest defence,180
+1400,Budapest defence,1122
+1600,Budapest defence,1928
+1800,Budapest defence,1615
+2000,Budapest defence,370
+2200,Budapest defence,32
+800,Caro-Kann defence,37
+1000,Caro-Kann defence,998
+1200,Caro-Kann defence,6842
+1400,Caro-Kann defence,18709
+1600,Caro-Kann defence,25897
+1800,Caro-Kann defence,17339
+2000,Caro-Kann defence,6096
+2200,Caro-Kann defence,1198
+2400,Caro-Kann defence,32
+1000,"Catalan, closed",4
+1200,"Catalan, closed",28
+1400,"Catalan, closed",154
+1600,"Catalan, closed",403
+1800,"Catalan, closed",511
+2000,"Catalan, closed",281
+2200,"Catalan, closed",73
+2400,"Catalan, closed",4
+800,Centre game,55
+1000,Centre game,1102
+1200,Centre game,5184
+1400,Centre game,8520
+1600,Centre game,5800
+1800,Centre game,2227
+2000,Centre game,384
+2200,Centre game,58
+2400,Centre game,1
+800,Dutch,15
+1000,Dutch,251
+1200,Dutch,1220
+1400,Dutch,3666
+1600,Dutch,4779
+1800,Dutch,3140
+2000,Dutch,776
+2200,Dutch,140
+2400,Dutch,3
+800,English opening,68
+1000,English opening,1245
+1200,English opening,6527
+1400,English opening,19480
+1600,English opening,23538
+1800,English opening,15372
+2000,English opening,5286
+2200,English opening,959
+2400,English opening,73
+2600,English opening,6
+1000,Evans gambit,13
+1200,Evans gambit,148
+1400,Evans gambit,570
+1600,Evans gambit,592
+1800,Evans gambit,307
+2000,Evans gambit,64
+2200,Evans gambit,11
+800,"Four knights, Scotch variation",13
+1000,"Four knights, Scotch variation",408
+1200,"Four knights, Scotch variation",1902
+1400,"Four knights, Scotch variation",2911
+1600,"Four knights, Scotch variation",2005
+1800,"Four knights, Scotch variation",1010
+2000,"Four knights, Scotch variation",400
+2200,"Four knights, Scotch variation",75
+2400,"Four knights, Scotch variation",3
+800,French defence,186
+1000,French defence,3743
+1200,French defence,21828
+1400,French defence,55201
+1600,French defence,59354
+1800,French defence,26981
+2000,French defence,6319
+2200,French defence,1296
+2400,French defence,53
+2600,French defence,4
+1000,Giuoco Piano,37
+1200,Giuoco Piano,523
+1400,Giuoco Piano,1887
+1600,Giuoco Piano,2319
+1800,Giuoco Piano,990
+2000,Giuoco Piano,240
+2200,Giuoco Piano,13
+800,Gruenfeld defence,1
+1000,Gruenfeld defence,32
+1200,Gruenfeld defence,263
+1400,Gruenfeld defence,992
+1600,Gruenfeld defence,2040
+1800,Gruenfeld defence,1950
+2000,Gruenfeld defence,797
+2200,Gruenfeld defence,168
+2400,Gruenfeld defence,15
+2600,Gruenfeld defence,2
+800,King's Indian defence,2
+1000,King's Indian defence,130
+1200,King's Indian defence,1276
+1400,King's Indian defence,5408
+1600,King's Indian defence,9017
+1800,King's Indian defence,7399
+2000,King's Indian defence,2880
+2200,King's Indian defence,693
+2400,King's Indian defence,38
+2600,King's Indian defence,2
+800,"King's Indian, East Indian defence",5
+1000,"King's Indian, East Indian defence",67
+1200,"King's Indian, East Indian defence",381
+1400,"King's Indian, East Indian defence",1219
+1600,"King's Indian, East Indian defence",2467
+1800,"King's Indian, East Indian defence",2030
+2000,"King's Indian, East Indian defence",728
+2200,"King's Indian, East Indian defence",233
+2400,"King's Indian, East Indian defence",9
+800,King's gambit,27
+1000,King's gambit,745
+1200,King's gambit,6151
+1400,King's gambit,18933
+1600,King's gambit,16579
+1800,King's gambit,4420
+2000,King's gambit,598
+2200,King's gambit,69
+2400,King's gambit,1
+800,King's knight opening,162
+1000,King's knight opening,2632
+1200,King's knight opening,9771
+1400,King's knight opening,12072
+1600,King's knight opening,5616
+1800,King's knight opening,1897
+2000,King's knight opening,516
+2200,King's knight opening,67
+2400,King's knight opening,1
+800,King's pawn game,428
+1000,King's pawn game,7887
+1200,King's pawn game,29840
+1400,King's pawn game,42305
+1600,King's pawn game,25507
+1800,King's pawn game,6883
+2000,King's pawn game,1104
+2200,King's pawn game,158
+2400,King's pawn game,7
+800,King's pawn opening,134
+1000,King's pawn opening,2632
+1200,King's pawn opening,14630
+1400,King's pawn opening,29770
+1600,King's pawn opening,24854
+1800,King's pawn opening,7985
+2000,King's pawn opening,1708
+2200,King's pawn opening,342
+2400,King's pawn opening,57
+2600,King's pawn opening,3
+1000,"Modern defence, Averbakh system",7
+1200,"Modern defence, Averbakh system",177
+1400,"Modern defence, Averbakh system",846
+1600,"Modern defence, Averbakh system",1280
+1800,"Modern defence, Averbakh system",986
+2000,"Modern defence, Averbakh system",284
+2200,"Modern defence, Averbakh system",39
+2400,"Modern defence, Averbakh system",4
+1000,Neo-Gruenfeld defence,5
+1200,Neo-Gruenfeld defence,25
+1400,Neo-Gruenfeld defence,129
+1600,Neo-Gruenfeld defence,338
+1800,Neo-Gruenfeld defence,544
+2000,Neo-Gruenfeld defence,355
+2200,Neo-Gruenfeld defence,110
+2400,Neo-Gruenfeld defence,8
+2600,Neo-Gruenfeld defence,3
+800,Nimzo-Indian defence,3
+1000,Nimzo-Indian defence,73
+1200,Nimzo-Indian defence,1104
+1400,Nimzo-Indian defence,4168
+1600,Nimzo-Indian defence,5335
+1800,Nimzo-Indian defence,3950
+2000,Nimzo-Indian defence,1275
+2200,Nimzo-Indian defence,268
+2400,Nimzo-Indian defence,20
+2600,Nimzo-Indian defence,2
+800,Nimzovich-Larsen attack,18
+1000,Nimzovich-Larsen attack,410
+1200,Nimzovich-Larsen attack,2959
+1400,Nimzovich-Larsen attack,8784
+1600,Nimzovich-Larsen attack,11805
+1800,Nimzovich-Larsen attack,6783
+2000,Nimzovich-Larsen attack,2757
+2200,Nimzovich-Larsen attack,871
+2400,Nimzovich-Larsen attack,59
+2600,Nimzovich-Larsen attack,16
+800,Old Benoni defence,11
+1000,Old Benoni defence,375
+1200,Old Benoni defence,2227
+1400,Old Benoni defence,7474
+1600,Old Benoni defence,9574
+1800,Old Benoni defence,6699
+2000,Old Benoni defence,2236
+2200,Old Benoni defence,582
+2400,Old Benoni defence,40
+2600,Old Benoni defence,1
+800,Old Indian defence,1
+1000,Old Indian defence,36
+1200,Old Indian defence,314
+1400,Old Indian defence,902
+1600,Old Indian defence,1517
+1800,Old Indian defence,1349
+2000,Old Indian defence,399
+2200,Old Indian defence,79
+2400,Old Indian defence,1
+800,Petrov's defence,87
+1000,Petrov's defence,1573
+1200,Petrov's defence,5793
+1400,Petrov's defence,8186
+1600,Petrov's defence,5771
+1800,Petrov's defence,1845
+2000,Petrov's defence,361
+2200,Petrov's defence,23
+800,Philidor's defence,105
+1000,Philidor's defence,2560
+1200,Philidor's defence,14632
+1400,Philidor's defence,27386
+1600,Philidor's defence,17326
+1800,Philidor's defence,4070
+2000,Philidor's defence,480
+2200,Philidor's defence,94
+2400,Philidor's defence,3
+800,Pirc defence,74
+1000,Pirc defence,1263
+1200,Pirc defence,6144
+1400,Pirc defence,12981
+1600,Pirc defence,14771
+1800,Pirc defence,9556
+2000,Pirc defence,2810
+2200,Pirc defence,415
+2400,Pirc defence,32
+2600,Pirc defence,2
+800,Polish (Sokolsky) opening,463
+1000,Polish (Sokolsky) opening,5314
+1200,Polish (Sokolsky) opening,23369
+1400,Polish (Sokolsky) opening,47592
+1600,Polish (Sokolsky) opening,50771
+1800,Polish (Sokolsky) opening,28049
+2000,Polish (Sokolsky) opening,8025
+2200,Polish (Sokolsky) opening,1655
+2400,Polish (Sokolsky) opening,174
+2600,Polish (Sokolsky) opening,9
+800,Queen's Gambit,101
+1000,Queen's Gambit,2682
+1200,Queen's Gambit,19259
+1400,Queen's Gambit,46187
+1600,Queen's Gambit,48911
+1800,Queen's Gambit,26132
+2000,Queen's Gambit,7068
+2200,Queen's Gambit,1399
+2400,Queen's Gambit,112
+2600,Queen's Gambit,3
+1000,Queen's Indian defence,7
+1200,Queen's Indian defence,88
+1400,Queen's Indian defence,397
+1600,Queen's Indian defence,681
+1800,Queen's Indian defence,791
+2000,Queen's Indian defence,425
+2200,Queen's Indian defence,108
+2400,Queen's Indian defence,16
+2600,Queen's Indian defence,3
+800,Queen's pawn,226
+1000,Queen's pawn,3686
+1200,Queen's pawn,17298
+1400,Queen's pawn,42120
+1600,Queen's pawn,42008
+1800,Queen's pawn,21260
+2000,Queen's pawn,6032
+2200,Queen's pawn,1548
+2400,Queen's pawn,200
+2600,Queen's pawn,18
+800,Queen's pawn game,380
+1000,Queen's pawn game,7101
+1200,Queen's pawn game,30105
+1400,Queen's pawn game,60049
+1600,Queen's pawn game,53582
+1800,Queen's pawn game,24807
+2000,Queen's pawn game,7934
+2200,Queen's pawn game,1647
+2400,Queen's pawn game,122
+2600,Queen's pawn game,4
+800,Reti opening,118
+1000,Reti opening,1167
+1200,Reti opening,6791
+1400,Reti opening,16741
+1600,Reti opening,20648
+1800,Reti opening,16320
+2000,Reti opening,7953
+2200,Reti opening,1965
+2400,Reti opening,383
+2600,Reti opening,53
+800,Richter-Veresov attack,22
+1000,Richter-Veresov attack,610
+1200,Richter-Veresov attack,1731
+1400,Richter-Veresov attack,2860
+1600,Richter-Veresov attack,1505
+1800,Richter-Veresov attack,593
+2000,Richter-Veresov attack,249
+2200,Richter-Veresov attack,60
+2400,Richter-Veresov attack,3
+800,Robatsch (modern) defence,27
+1000,Robatsch (modern) defence,816
+1200,Robatsch (modern) defence,4816
+1400,Robatsch (modern) defence,14290
+1600,Robatsch (modern) defence,15915
+1800,Robatsch (modern) defence,8795
+2000,Robatsch (modern) defence,2564
+2200,Robatsch (modern) defence,627
+2400,Robatsch (modern) defence,99
+2600,Robatsch (modern) defence,8
+800,Ruy Lopez (Spanish opening),26
+1000,Ruy Lopez (Spanish opening),1220
+1200,Ruy Lopez (Spanish opening),8606
+1400,Ruy Lopez (Spanish opening),17084
+1600,Ruy Lopez (Spanish opening),14124
+1800,Ruy Lopez (Spanish opening),6134
+2000,Ruy Lopez (Spanish opening),1548
+2200,Ruy Lopez (Spanish opening),221
+2400,Ruy Lopez (Spanish opening),6
+800,Scandinavian (centre counter) defence,146
+1000,Scandinavian (centre counter) defence,3641
+1200,Scandinavian (centre counter) defence,16030
+1400,Scandinavian (centre counter) defence,31680
+1600,Scandinavian (centre counter) defence,29684
+1800,Scandinavian (centre counter) defence,13244
+2000,Scandinavian (centre counter) defence,3261
+2200,Scandinavian (centre counter) defence,721
+2400,Scandinavian (centre counter) defence,41
+800,Scotch game,10
+1000,Scotch game,439
+1200,Scotch game,3465
+1400,Scotch game,7552
+1600,Scotch game,6254
+1800,Scotch game,2409
+2000,Scotch game,573
+2200,Scotch game,76
+2400,Scotch game,2
+800,Sicilian defence,136
+1000,Sicilian defence,3944
+1200,Sicilian defence,30323
+1400,Sicilian defence,85561
+1600,Sicilian defence,90873
+1800,Sicilian defence,44043
+2000,Sicilian defence,13832
+2200,Sicilian defence,2571
+2400,Sicilian defence,107
+2600,Sicilian defence,5
+800,Three knights game,40
+1000,Three knights game,958
+1200,Three knights game,4654
+1400,Three knights game,6897
+1600,Three knights game,3921
+1800,Three knights game,1272
+2000,Three knights game,316
+2200,Three knights game,59
+2400,Three knights game,6
+800,Torre attack (Tartakower variation),1
+1000,Torre attack (Tartakower variation),25
+1200,Torre attack (Tartakower variation),213
+1400,Torre attack (Tartakower variation),434
+1600,Torre attack (Tartakower variation),678
+1800,Torre attack (Tartakower variation),452
+2000,Torre attack (Tartakower variation),140
+2200,Torre attack (Tartakower variation),37
+2400,Torre attack (Tartakower variation),3
+800,Two knights defence,11
+1000,Two knights defence,863
+1200,Two knights defence,5829
+1400,Two knights defence,12259
+1600,Two knights defence,8155
+1800,Two knights defence,2406
+2000,Two knights defence,544
+2200,Two knights defence,73
+800,Vienna game,52
+1000,Vienna game,1007
+1200,Vienna game,4287
+1400,Vienna game,7087
+1600,Vienna game,6690
+1800,Vienna game,3106
+2000,Vienna game,891
+2200,Vienna game,171
+2400,Vienna game,15

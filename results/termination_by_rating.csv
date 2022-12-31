@@ -1,0 +1,36 @@
+avgrating,Termination,numgames
+800,Abandoned,2
+1000,Abandoned,301
+1200,Abandoned,3130
+1400,Abandoned,9826
+1600,Abandoned,9677
+1800,Abandoned,2935
+2000,Abandoned,558
+2200,Abandoned,34
+2400,Abandoned,4
+800,Normal,2348
+1000,Normal,46239
+1200,Normal,232857
+1400,Normal,484269
+1600,Normal,449658
+1800,Normal,216253
+2000,Normal,64718
+2200,Normal,14607
+2400,Normal,1244
+2600,Normal,103
+800,Rules infraction,1
+1000,Rules infraction,4
+1200,Rules infraction,38
+1400,Rules infraction,57
+1600,Rules infraction,21
+1800,Rules infraction,8
+800,Time forfeit,1009
+1000,Time forfeit,18174
+1200,Time forfeit,96644
+1400,Time forfeit,233434
+1600,Time forfeit,252389
+1800,Time forfeit,135146
+2000,Time forfeit,40328
+2200,Time forfeit,7473
+2400,Time forfeit,568
+2600,Time forfeit,49

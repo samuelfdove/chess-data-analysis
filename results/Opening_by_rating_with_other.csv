@@ -1,0 +1,162 @@
+avgrating,Opening,numgames
+800,Alekhine's defence,76
+800,Bishop's opening,74
+800,English opening,68
+800,French defence,186
+800,King's knight opening,162
+800,King's pawn game,428
+800,King's pawn opening,134
+800,Other,393
+800,Petrov's defence,87
+800,Philidor's defence,105
+800,Pirc defence,74
+800,Polish (Sokolsky) opening,463
+800,Queen's Gambit,101
+800,Queen's pawn,226
+800,Queen's pawn game,380
+800,Reti opening,118
+800,Scandinavian (centre counter) defence,146
+800,Sicilian defence,136
+1000,Bishop's opening,1400
+1000,French defence,3743
+1000,King's knight opening,2632
+1000,King's pawn game,7887
+1000,King's pawn opening,2632
+1000,Other,15649
+1000,Petrov's defence,1573
+1000,Philidor's defence,2560
+1000,Polish (Sokolsky) opening,5314
+1000,Queen's Gambit,2682
+1000,Queen's pawn,3686
+1000,Queen's pawn game,7101
+1000,Scandinavian (centre counter) defence,3641
+1000,Sicilian defence,3944
+1200,Bishop's opening,7146
+1200,Caro-Kann defence,6842
+1200,English opening,6527
+1200,French defence,21828
+1200,King's knight opening,9771
+1200,King's pawn game,29840
+1200,King's pawn opening,14630
+1200,Other,67075
+1200,Philidor's defence,14632
+1200,Polish (Sokolsky) opening,23369
+1200,Queen's Gambit,19259
+1200,Queen's pawn,17298
+1200,Queen's pawn game,30105
+1200,Reti opening,6791
+1200,Ruy Lopez (Spanish opening),8606
+1200,Scandinavian (centre counter) defence,16030
+1200,Sicilian defence,30323
+1400,Caro-Kann defence,18709
+1400,English opening,19480
+1400,French defence,55201
+1400,King's gambit,18933
+1400,King's pawn game,42305
+1400,King's pawn opening,29770
+1400,Other,147355
+1400,Philidor's defence,27386
+1400,Polish (Sokolsky) opening,47592
+1400,Queen's Gambit,46187
+1400,Queen's pawn,42120
+1400,Queen's pawn game,60049
+1400,Reti opening,16741
+1400,Robatsch (modern) defence,14290
+1400,Ruy Lopez (Spanish opening),17084
+1400,Scandinavian (centre counter) defence,31680
+1400,Sicilian defence,85561
+1600,Caro-Kann defence,25897
+1600,English opening,23538
+1600,French defence,59354
+1600,King's gambit,16579
+1600,King's pawn game,25507
+1600,King's pawn opening,24854
+1600,Other,130233
+1600,Philidor's defence,17326
+1600,Pirc defence,14771
+1600,Polish (Sokolsky) opening,50771
+1600,Queen's Gambit,48911
+1600,Queen's pawn,42008
+1600,Queen's pawn game,53582
+1600,Reti opening,20648
+1600,Robatsch (modern) defence,15915
+1600,Ruy Lopez (Spanish opening),14124
+1600,Scandinavian (centre counter) defence,29684
+1600,Sicilian defence,90873
+1800,Caro-Kann defence,17339
+1800,English opening,15372
+1800,French defence,26981
+1800,King's Indian defence,7399
+1800,King's pawn opening,7985
+1800,Other,84824
+1800,Pirc defence,9556
+1800,Polish (Sokolsky) opening,28049
+1800,Queen's Gambit,26132
+1800,Queen's pawn,21260
+1800,Queen's pawn game,24807
+1800,Reti opening,16320
+1800,Robatsch (modern) defence,8795
+1800,Scandinavian (centre counter) defence,13244
+1800,Sicilian defence,44043
+2000,Caro-Kann defence,6096
+2000,English opening,5286
+2000,French defence,6319
+2000,King's Indian defence,2880
+2000,Nimzovich-Larsen attack,2757
+2000,Old Benoni defence,2236
+2000,Other,20109
+2000,Pirc defence,2810
+2000,Polish (Sokolsky) opening,8025
+2000,Queen's Gambit,7068
+2000,Queen's pawn,6032
+2000,Queen's pawn game,7934
+2000,Reti opening,7953
+2000,Robatsch (modern) defence,2564
+2000,Scandinavian (centre counter) defence,3261
+2000,Sicilian defence,13832
+2200,Alekhine's defence,556
+2200,Caro-Kann defence,1198
+2200,English opening,959
+2200,French defence,1296
+2200,King's Indian defence,693
+2200,Nimzovich-Larsen attack,871
+2200,Old Benoni defence,582
+2200,Other,3778
+2200,Polish (Sokolsky) opening,1655
+2200,Queen's Gambit,1399
+2200,Queen's pawn,1548
+2200,Queen's pawn game,1647
+2200,Reti opening,1965
+2200,Robatsch (modern) defence,627
+2200,Scandinavian (centre counter) defence,721
+2200,Sicilian defence,2571
+2400,English opening,73
+2400,French defence,53
+2400,King's Indian defence,38
+2400,King's pawn opening,57
+2400,Nimzovich-Larsen attack,59
+2400,Old Benoni defence,40
+2400,Other,254
+2400,Polish (Sokolsky) opening,174
+2400,Queen's Gambit,112
+2400,Queen's pawn,200
+2400,Queen's pawn game,122
+2400,Reti opening,383
+2400,Robatsch (modern) defence,99
+2400,Scandinavian (centre counter) defence,41
+2400,Sicilian defence,107
+2600,Benoni defence,3
+2600,English opening,6
+2600,French defence,4
+2600,King's pawn opening,3
+2600,Neo-Gruenfeld defence,3
+2600,Nimzovich-Larsen attack,16
+2600,Other,14
+2600,Polish (Sokolsky) opening,9
+2600,Queen's Gambit,3
+2600,Queen's Indian defence,3
+2600,Queen's pawn,18
+2600,Queen's pawn game,4
+2600,Reti opening,53
+2600,Robatsch (modern) defence,8
+2600,Sicilian defence,5

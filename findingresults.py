@@ -54,6 +54,10 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating",db)
 # df.to_csv('results/piece_to_square_counts_by_side_by_rating.csv',index=False)
 
+df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
+df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1.csv',index=False)
+
+
 # #PIECE TO PIECE CAPTURE DATA
 # df = pd.read_sql_query("select piece,capturedpiece,COUNT(*) from allmoves where iscapture='True' group by piece,capturedpiece", db)
 # df.to_csv('results/piece_to_piece_capture_data.csv',index=False)
@@ -93,9 +97,17 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select avgrating,move1,move2,move3,move4,COUNT(*) as 'numgames' from firstmoves join gameExtraData using (tell) group by avgrating,move1,move2,move3,move4", db)
 # df.to_csv('results/firstmoves_by_rating.csv',index=False)
 
+# df = pd.read_sql_query("select avgrating,move1,move2,COUNT(*) as 'numgames_firstmoves' from firstmoves join gameExtraData using (tell) group by avgrating,move1,move2", db)
+# df.to_csv('results/firstmoves_by_rating_2.csv',index=False)
+
 # df = pd.read_sql_query("select avgrating,nummoves,COUNT(*) as 'numgames' from firstmoves join gameExtraData using (tell) group by avgrating,nummoves", db)
 # df.to_csv('results/nummoves_by_rating.csv',index=False)
 
+# df = pd.read_sql_query("select avgrating,ged.Event,COUNT(*) as 'numgames' from games join gameExtraData ged using (tell) group by avgrating,ged.Event", db)
+# df.to_csv('results/Event_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,Opening,sum(numgames) as 'numgames' from (select avgrating,numgames,case when (sum(numgames) over(PARTITION BY avgrating))/numgames > 50 then 'Other' else Open end as 'Opening' from (select avgrating,E.Opening as 'Open',COUNT(*) as 'numgames' from games join gameExtraData using (tell) join ECOtoOpening E using (ECO) group by avgrating,E.Opening) t) t2 group by avgrating,Opening;", db)
+# df.to_csv('results/Opening_by_rating_with_other.csv',index=False)
 
 db.close()
 

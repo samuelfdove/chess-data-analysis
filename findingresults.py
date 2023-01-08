@@ -54,9 +54,11 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating",db)
 # df.to_csv('results/piece_to_square_counts_by_side_by_rating.csv',index=False)
 
-df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
-df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1.csv',index=False)
+# df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
+# df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1.csv',index=False)
 
+df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) where isbook = 0 and ply>20 group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
+df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1_no_book.csv',index=False)
 
 # #PIECE TO PIECE CAPTURE DATA
 # df = pd.read_sql_query("select piece,capturedpiece,COUNT(*) from allmoves where iscapture='True' group by piece,capturedpiece", db)

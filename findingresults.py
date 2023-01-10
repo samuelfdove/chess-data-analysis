@@ -57,8 +57,8 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
 # df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1.csv',index=False)
 
-df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) where isbook = 0 and ply>20 group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
-df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1_no_book.csv',index=False)
+# df = pd.read_sql_query("select tosquarerank+1 as 'tosquarerank',tosquarefile+1 as 'tosquarefile',piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) where isbook = 0 and ply>20 group by tosquarerank,tosquarefile,piece,turn,avgrating order by tosquarerank desc,tosquarefile asc",db)
+# df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1_no_book.csv',index=False)
 
 # #PIECE TO PIECE CAPTURE DATA
 # df = pd.read_sql_query("select piece,capturedpiece,COUNT(*) from allmoves where iscapture='True' group by piece,capturedpiece", db)
@@ -110,6 +110,15 @@ df.to_csv('results/piece_to_square_counts_by_side_by_rating_p1_no_book.csv',inde
 
 # df = pd.read_sql_query("select avgrating,Opening,sum(numgames) as 'numgames' from (select avgrating,numgames,case when (sum(numgames) over(PARTITION BY avgrating))/numgames > 50 then 'Other' else Open end as 'Opening' from (select avgrating,E.Opening as 'Open',COUNT(*) as 'numgames' from games join gameExtraData using (tell) join ECOtoOpening E using (ECO) group by avgrating,E.Opening) t) t2 group by avgrating,Opening;", db)
 # df.to_csv('results/Opening_by_rating_with_other.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating,piece,capturedpiece,COUNT(moveid) as 'nummoves_captures' from allmoves join gameExtraData ged using (tell) where iscapture='True' group by avgrating,piece,capturedpiece;", db)
+# df.to_csv('results/Captures_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select avgrating, piece, COUNT(*) as 'numcheckmates' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where ischeck='True' and Termination='Normal' and ply=nummoves group by avgrating, piece", db)
+# df.to_csv('results/Checkmates_by_piece_by_rating.csv',index=False)
+
+# df = pd.read_sql_query("select ROUND(ply/10)*10, piece, COUNT(*) as 'numcheckmates' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where ischeck='True' and Termination='Normal' and ply=nummoves group by ROUND(ply/10)*10, piece", db)
+# df.to_csv('results/Checkmates_by_piece_by_ply.csv',index=False)
 
 db.close()
 

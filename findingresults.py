@@ -37,6 +37,10 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn from allmoves where isbook=0 group by tosquarerank,tosquarefile,piece,turn",db)
 # df.to_csv('results/piece_to_square_counts_by_side.csv',index=False)
 
+# #PIECE TO SQUARE COUNTS BY SIDE BY SKILL
+# df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn,case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join gameExtraData using (tell) where avgrating<=1200 or avgrating>=1800 and isbook=0 group by tosquarerank,tosquarefile,piece,turn,Skill",db)
+# df.to_csv('results/piece_to_square_counts_by_side_by_skill.csv',index=False)
+
 # #PIECE TO SQUARE COUNTS BY SIDE BY ELO
 # df = pd.read_sql_query("select tosquarerank,tosquarefile,piece,COUNT(*),turn,avgrating from allmoves join gameExtraData using (tell) group by tosquarerank,tosquarefile,piece,turn,avgrating",db)
 # df.to_csv('results/piece_to_square_counts_by_side_by_rating.csv',index=False)
@@ -119,6 +123,9 @@ db = sqlite3.connect("gameheaders.db")
 
 # df = pd.read_sql_query("select ROUND(ply/10)*10, piece, COUNT(*) as 'numcheckmates' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where ischeck='True' and Termination='Normal' and ply=nummoves group by ROUND(ply/10)*10, piece", db)
 # df.to_csv('results/Checkmates_by_piece_by_ply.csv',index=False)
+
+# df = pd.read_sql_query("select case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill',piece,distance,COUNT(*) as 'number of moves' from allmoves join gameExtraData using (tell) where avgrating<=1200 or avgrating>=1800 group by 'Skill', piece,distance", db)
+# df.to_csv('results/distance_by_piece_by_skill.csv',index=False)
 
 db.close()
 

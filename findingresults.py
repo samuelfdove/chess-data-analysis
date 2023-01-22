@@ -72,6 +72,10 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select piece,capturedpiece,COUNT(*),avgrating from allmoves join gameExtraData using(tell) where iscapture='True' group by piece,capturedpiece,avgrating", db )
 # df.to_csv('results/piece_to_piece_capture_data_by_rating.csv',index=False)
 
+# #PIECE TO PIECE CAPTURE DATA BY SKILL
+# df = pd.read_sql_query("select piece,capturedpiece,COUNT(*),case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join gameExtraData using(tell) where (avgrating<=1200 or avgrating>=1800) and iscapture='True' group by piece,capturedpiece,Skill", db )
+# df.to_csv('results/piece_to_piece_capture_data_by_skill.csv',index=False)
+
 # #PIECE CAUSE CHECK
 # df = pd.read_sql_query("select piece,COUNT(*) from allmoves where ischeck='True' group by piece", db)
 # df.to_csv('results/piece_cause_check.csv',index=False)
@@ -80,12 +84,20 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select piece,COUNT(*),avgrating from allmoves join gameExtraData using (tell) where ischeck='True' group by piece,avgrating", db)
 # df.to_csv('results/piece_cause_check_by_rating.csv',index=False)
 
+# #PIECE CAUSE CHECK BY SKILL
+# df = pd.read_sql_query("select piece,COUNT(*),case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join gameExtraData using (tell) where (avgrating<=1200 or avgrating>=1800) and ischeck='True' group by piece,skill", db)
+# df.to_csv('results/piece_cause_check_by_rating.csv',index=False)
+
 # #PIECE AFTER CHECK
 # df = pd.read_sql_query("select piece,COUNT(*) from allmoves where isincheck='True' group by piece", db)
 # df.to_csv('results/piece_after_check.csv',index=False)
 
 # #PIECE AFTER CHECK BY ELO
 # df = pd.read_sql_query("select piece,COUNT(*),avgrating from allmoves join gameExtraData using (tell) where isincheck='True' group by piece,avgrating", db)
+# df.to_csv('results/piece_after_check_by_rating.csv',index=False)
+
+# #PIECE AFTER CHECK BY SKILL
+# df = pd.read_sql_query("select piece,COUNT(*),case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join gameExtraData using (tell) where (avgrating<=1200 or avgrating>=1800) and isincheck='True' group by piece,skill", db)
 # df.to_csv('results/piece_after_check_by_rating.csv',index=False)
 
 # df = pd.read_sql_query("select avgrating,COUNT(*) from allmoves join gameExtraData using (tell) group by avgrating", db)
@@ -124,8 +136,26 @@ db = sqlite3.connect("gameheaders.db")
 # df = pd.read_sql_query("select ROUND(ply/10)*10, piece, COUNT(*) as 'numcheckmates' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where ischeck='True' and Termination='Normal' and ply=nummoves group by ROUND(ply/10)*10, piece", db)
 # df.to_csv('results/Checkmates_by_piece_by_ply.csv',index=False)
 
+# df = pd.read_sql_query("select case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill', piece, COUNT(*) as 'numcheckmates' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where (avgrating<=1200 or avgrating>=1800) and ischeck='True' and Termination='Normal' and ply=nummoves group by Skill, piece", db)
+# df.to_csv('results/Checkmates_by_piece_by_skill.csv',index=False)
+
 # df = pd.read_sql_query("select case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill',piece,distance,COUNT(*) as 'number of moves' from allmoves join gameExtraData using (tell) where avgrating<=1200 or avgrating>=1800 group by 'Skill', piece,distance", db)
 # df.to_csv('results/distance_by_piece_by_skill.csv',index=False)
+
+# df = pd.read_sql_query("select ROUND(ply/10)*10, COUNT(*) as 'nummates',case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where (avgrating<=1200 or avgrating>=1800) and ischeck='True' and Termination='Normal' and ply=nummoves group by ROUND(ply/10)*10, Skill", db)
+# df.to_csv('results/checkmates_by_ply_by_skill.csv',index=False)
+
+# df = pd.read_sql_query("select ROUND(ply/10)*10,piece, COUNT(*) as 'nummates',case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join firstmoves using (tell) join gameExtraData using (tell) join games using (tell) where (avgrating<=1200 or avgrating>=1800) and ischeck='True' and Termination='Normal' and ply=nummoves group by ROUND(ply/10)*10,piece, Skill", db)
+# df.to_csv('results/checkmates_by_piece_by_ply_by_skill.csv',index=False)
+
+# df = pd.read_sql_query("select ROUND(ply/10)*10 as 'MoveNumber', COUNT(*) as 'numcaptures',case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join gameExtraData using (tell) where (avgrating<=1200 or avgrating>=1800) and iscapture='True' group by ROUND(ply/10)*10, Skill", db)
+# df.to_csv('results/captures_by_ply_by_skill.csv',index=False)
+
+# df = pd.read_sql_query("select ROUND(ply/10)*10 as 'MoveNumber' ,capturedpiece, COUNT(*) as 'numcaptures',case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves join gameExtraData using (tell) where (avgrating<=1200 or avgrating>=1800) and iscapture='True' group by ROUND(ply/10)*10,capturedpiece, Skill", db)
+# df.to_csv('results/captures_by_capturedpiece_by_ply_by_skill.csv',index=False)
+
+# df = pd.read_sql_query("select ROUND(ply/10)*10 as 'MoveNumber',piece, COUNT(*) as 'nummoves',case when avgrating<=1200 then 'Bad' when avgrating>=1800 then 'Good' else '-' end as 'Skill' from allmoves  join gameExtraData using (tell) where (avgrating<=1200 or avgrating>=1800) group by ROUND(ply/10)*10,piece, Skill", db)
+# df.to_csv('results/moves_by_piece_by_ply_by_skill.csv',index=False)
 
 db.close()
 

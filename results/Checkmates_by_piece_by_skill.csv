@@ -1,0 +1,13 @@
+Skill,piece,numcheckmates
+Bad,bishop,8008
+Bad,king,73
+Bad,knight,12551
+Bad,pawn,5580
+Bad,queen,91611
+Bad,rook,36373
+Good,bishop,8369
+Good,king,75
+Good,knight,12900
+Good,pawn,7201
+Good,queen,78416
+Good,rook,36421
